@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>pendaftaran kursus</title>
+    </head>
+    <body style="font-family: arial;">
+        <h1 align="center" style="font: 'arial black' ; color: red; background-color: aqua;">Pendaftaran Kursus</h1>
+        <p style="font: 'arial black'; color: black; background-color: lightslategray;"><b>Data Diri</b>
+        <br>
+        <table>
+            <tr>
+                <td><font type="arial" size="5">nama:</font></td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td><font type="arial" size="5">nim:</font></td>
+                <td><input type="text" name="nim" maxlength="9" size="9"></td>
+            </tr>
+            <tr>
+                <td><font type="arial" size="5">E-mail:</font></td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td><font type="arial" size="5">tanggal lahir:</font></td>
+                <td><input type="date" name="tanggal_lahir"></td>
+            </tr>
+            <tr>
+                <td valign="top">jenis kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="L"> Laki-laki<br>
+                    <input type="radio" name="jenis_kelamin" value="P"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">pilih program kursus</td>
+                <td>
+                    <input type="checkbox" name="program_1" value="C#"> C#<br>
+                    <input type="checkbox" name="program_2" value="Java"> Java<br>
+                    <input type="checkbox" name="program_3" value="SQL"> SQL<br>
+                    <input type="checkbox" name="program_4" value="HTML dan PHP"> HTML dan PHP
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">pilih hari/jam kursus</td>
+                <td>
+                    <select name="hari/jam">
+                        <option value="SRP"> Senin-Rabu/09.00-11.00</option>
+                        <option value="SRS"> Senin-Rabu/12.00-14.00</option>
+                        <option value="KSP"> Kamis-Sabtu/09.00-11.00</option>
+                        <option value="KSS"> Kamis-Sabtu/12.00-14.00</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        </p>
+        <form style="color: black; background-color: palevioletred;">
+        Komentar anda:<br>
+        <textarea name="komentar" cols="45" rows="5"></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="cancel" onclick="history.back()">
+        </form>
+    </body>
+</html>
