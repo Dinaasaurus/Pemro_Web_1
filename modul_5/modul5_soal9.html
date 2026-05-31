@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p>klik tombol berikut untuk menampilkan konfirmasi</p>
+        <button onclick="myFunction()">Klik sini</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                var x;
+                var name=prompt("masukkan nama anda:","Yang Mulia");
+                if (name != null) {
+                    x = "Hormat kepada " + name + "! Apkah Baginda baik baik saja?";
+                    document.getElementById("demo").innerHTML = x;
+                }
+            }
+        </script>
+    </body>
+</html>
